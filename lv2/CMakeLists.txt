@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 2.6)
 
 project (rkrlv2)
 
-set(LV2_INSTALL_DIR lib/lv2/rkr.lv2 ) # CACHE PATH "Specifies where the LV2 libraries should be installed")
+set(LV2_INSTALL_DIR lib/lv2/rkr.lv2 CACHE STRING "Specifies where the LV2 libraries should be installed")
 IF(NOT ${CMAKE_SYSTEM_PROCESSOR} MATCHES "arm")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -O3 -msse -msse2 -mfpmath=sse -ffast-math")
 ENDIF(NOT ${CMAKE_SYSTEM_PROCESSOR} MATCHES "arm")

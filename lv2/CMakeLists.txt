@@ -101,6 +101,9 @@ install (DIRECTORY ttl/
 install (DIRECTORY ${CMAKE_BINARY_DIR}/lv2data/
   DESTINATION ${LV2_INSTALL_DIR}
 )
+install (DIRECTORY modgui/
+  DESTINATION ${LV2_INSTALL_DIR}/modgui
+)
 
 #also install carla presets into usr share
 install (DIRECTORY ${CMAKE_BINARY_DIR}/lv2data/
